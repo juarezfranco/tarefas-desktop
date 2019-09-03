@@ -11,23 +11,29 @@ add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format (meson.project_name()), la
 executable(
     meson.project_name(),
     'src/Application.vala',
-    'src/Application.vala',
+
     'src/Models/Task.vala',
+
     'src/Dao/DatabaseManager.vala',
     'src/Dao/TaskDao.vala',
     'src/Controllers/TasksController.vala',
+
     'src/Views/MainWindow.vala',
     'src/Views/TaskForm.vala',
     'src/Views/TaskView.vala',
     'src/Views/TaskItemList.vala',
     'src/Views/TasksList.vala',
+
     'src/Widgets/TextArea.vala',
     'src/Widgets/FormGroup.vala',
+
     'src/Interfaces/Model.vala',
     'src/Interfaces/Migration.vala',
+
     'src/Migrations/CreateTableTasks.vala',
     'src/Migrations/CreateTableMigrations.vala',
     'src/Migrations/CreateTableSettings.vala',
+
     'src/Resources/Styles.vala',
     'src/Resources/Strings.vala',
     dependencies: [
