@@ -7,18 +7,22 @@
   <name>Tasks</name>
   <summary>Manager tasks</summary>
   <description>
-    <p>Ideal for managing daily tasks</p>
+    <p>Ideal for managing daily tasks, simple and objective.</p>
+    <p>Minimal interface, only title and description.</p>
+    <p>It's never been easier to manage your simple tasks and keep your task history.</p>
   </description>
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/juarezfranco/tarefas-desktop/master/resources/picture.png</image>
     </screenshot>
   </screenshots>
-  <release version="1.0" date="2019-09-03">
-      <description>
-          <p>Initial release</p>
-      </description>
-  </release>
+  <releases>
+      <release version="1.0" date="2019-09-03">
+          <description>
+              <p>Initial release</p>
+          </description>
+      </release>
+    </releases>
   <developer_name>Juarez Franco</developer_name>
   <custom>
      <value key="x-appcenter-color-primary">#a56de2</value>
