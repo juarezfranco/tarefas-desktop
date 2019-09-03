@@ -20,7 +20,6 @@ You'll need the following dependencies:
 ```
 meson build --prefix=/usr
 cd build
-sudo ninja test
 sudo ninja install
 com.github.juarezfranco.tarefas-desktop
 ```
