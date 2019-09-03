@@ -7,4 +7,4 @@ Exec=com.github.juarezfranco.tarefas-desktop
 Icon=com.github.juarezfranco.tarefas-desktop
 Terminal=false
 Type=Application
-Keywords=Tasks
+Keywords=Tasks;

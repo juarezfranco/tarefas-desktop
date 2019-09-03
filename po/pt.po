@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.juarezfranco.tarefas-desktop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-03 01:05-0400\n"
+"POT-Creation-Date: 2019-09-03 09:32-0400\n"
 "PO-Revision-Date: 2019-09-02 19:25-0400\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -31,7 +31,6 @@ msgstr "Tarefa"
 
 #: src/Resources/Strings.vala:13
 #: data/com.github.juarezfranco.tarefas-desktop.desktop.in:3
-#: data/com.github.juarezfranco.tarefas-desktop.desktop.in:11
 #: data/com.github.juarezfranco.tarefas-desktop.appdata.xml.in:7
 msgid "Tasks"
 msgstr "Tarefas"
@@ -86,8 +85,13 @@ msgid "Ideal for managing daily tasks"
 msgstr "Ideal para gerenciar tarefas diarias"
 
 #: data/com.github.juarezfranco.tarefas-desktop.desktop.in:8
-msgid "tag"
+msgid "com.github.juarezfranco.tarefas-desktop"
 msgstr ""
+
+#: data/com.github.juarezfranco.tarefas-desktop.desktop.in:11
+#, fuzzy
+msgid "Tasks;"
+msgstr "Tarefas;"
 
 #: data/com.github.juarezfranco.tarefas-desktop.appdata.xml.in:10
 #, fuzzy
@@ -102,7 +106,9 @@ msgstr "Interface minima, apenas titulo e descricao"
 msgid ""
 "It's never been easier to manage your simple tasks and keep your task "
 "history."
-msgstr "Nunca foi tao facil gerenciar suas tarefas mais simples e mantem seu historico de tarefas"
+msgstr ""
+"Nunca foi tao facil gerenciar suas tarefas mais simples e mantem seu "
+"historico de tarefas"
 
 #: data/com.github.juarezfranco.tarefas-desktop.appdata.xml.in:22
 msgid "Initial release"
