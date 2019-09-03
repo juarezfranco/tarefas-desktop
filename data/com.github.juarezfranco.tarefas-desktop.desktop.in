@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Tasks
+GenericName=Manager tasks
+Comment=Ideal for managing daily tasks
+Categories=Utility;
+Exec=com.github.juarezfranco.tarefas-desktop
+Icon=tag
+Terminal=false
+Type=Application
+Keywords=Tasks;Tarefas;Scheduler;

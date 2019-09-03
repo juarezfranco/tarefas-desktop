@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2019 Juarez Arce Franco Junior juarezfrancojr@gmail.com -->
+<component type="desktop">
+  <id>com.github.juarezfranco.tarefas-desktop</id>
+  <metadata_license>CC0</metadata_license>
+  <name>Tasks</name>
+  <summary>Manager tasks</summary>
+  <description>
+    <p>Ideal for managing daily tasks</p>
+  </description>
+  <custom>
+     <value key="x-appcenter-color-primary">#a56de2</value>
+     <value key="x-appcenter-color-primary-text">rgb(255, 255, 255)</value>
+  </custom>
+</component>

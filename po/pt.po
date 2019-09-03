@@ -1,0 +1,94 @@
+# Portuguese translations for com.github.juarezfranco.tarefas-desktop package.
+# Copyright (C) 2019 THE com.github.juarezfranco.tarefas-desktop'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.juarezfranco.tarefas-desktop package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.juarezfranco.tarefas-desktop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-02 20:08-0400\n"
+"PO-Revision-Date: 2019-09-02 19:25-0400\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/Resources/Strings.vala:10
+msgid "Go to home"
+msgstr "Inicio"
+
+#: src/Resources/Strings.vala:11
+msgid "Add task"
+msgstr "Adicionar tarefa"
+
+#: src/Resources/Strings.vala:12
+msgid "Task"
+msgstr "Tarefa"
+
+#: src/Resources/Strings.vala:13
+#: data/com.github.juarezfranco.tarefas-desktop.desktop.in:3
+#: data/com.github.juarezfranco.tarefas-desktop.appdata.xml.in:6
+msgid "Tasks"
+msgstr "Tarefas"
+
+#: src/Resources/Strings.vala:14
+msgid "Title:"
+msgstr "Titulo:"
+
+#: src/Resources/Strings.vala:15
+msgid "Description:"
+msgstr "Descricao:"
+
+#: src/Resources/Strings.vala:16
+msgid "Save task"
+msgstr "Salvar Tarefa"
+
+#: src/Resources/Strings.vala:17
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/Resources/Strings.vala:18
+msgid "[COMPLETED]"
+msgstr "[COMPLETADA]"
+
+#: src/Resources/Strings.vala:19
+msgid "Created at"
+msgstr "Criado em"
+
+#: src/Resources/Strings.vala:20
+msgid "more"
+msgstr "mais"
+
+#: src/Resources/Strings.vala:21
+msgid "Ready"
+msgstr "Pronto"
+
+#: src/Resources/Strings.vala:22
+msgid "Edit"
+msgstr "Editar"
+
+#: src/Resources/Strings.vala:23
+msgid "Remove"
+msgstr "Remover"
+
+#: data/com.github.juarezfranco.tarefas-desktop.desktop.in:4
+#: data/com.github.juarezfranco.tarefas-desktop.appdata.xml.in:7
+msgid "Manager tasks"
+msgstr "Gerenciador de tarefas"
+
+#: data/com.github.juarezfranco.tarefas-desktop.desktop.in:5
+#: data/com.github.juarezfranco.tarefas-desktop.appdata.xml.in:9
+msgid "Ideal for managing daily tasks"
+msgstr "Ideal para gerenciar tarefas diarias"
+
+#: data/com.github.juarezfranco.tarefas-desktop.desktop.in:8
+msgid "tag"
+msgstr ""
+
+#: data/com.github.juarezfranco.tarefas-desktop.desktop.in:11
+msgid "Tasks;Tarefas;Scheduler;"
+msgstr "Tasks;Tarefas"

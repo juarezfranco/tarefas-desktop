@@ -1,0 +1,16 @@
+Source: com.github.juarezfranco.tarefas-desktop
+Section: x11
+Priority: extra
+Maintainer: Juarez Franco <juarezfrancojr@gmail.com>
+Build-Depends: debhelper (>= 10.5.1),
+               gettext,
+               libgtk-3-dev (>= 3.10),
+               meson,
+               valac (>= 0.28.0)
+Standards-Version: 4.1.1
+
+Package: com.github.juarezfranco.tarefas-desktop
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Tasks
+ Ideal for managing daily tasks.
