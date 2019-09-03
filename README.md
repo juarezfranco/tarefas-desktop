@@ -18,8 +18,9 @@ You'll need the following dependencies:
 ## Building
 
 ```
-meson build && cd build
-meson configure -Dprefix=/usr
+meson build --prefix=/usr
+cd build
+sudo ninja test
 sudo ninja install
 com.github.juarezfranco.tarefas-desktop
 ```
