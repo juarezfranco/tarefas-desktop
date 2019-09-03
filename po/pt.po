@@ -31,6 +31,7 @@ msgstr "Tarefa"
 
 #: src/Resources/Strings.vala:13
 #: data/com.github.juarezfranco.tarefas-desktop.desktop.in:3
+#: data/com.github.juarezfranco.tarefas-desktop.desktop.in:11
 #: data/com.github.juarezfranco.tarefas-desktop.appdata.xml.in:7
 msgid "Tasks"
 msgstr "Tarefas"
@@ -87,10 +88,6 @@ msgstr "Ideal para gerenciar tarefas diarias"
 #: data/com.github.juarezfranco.tarefas-desktop.desktop.in:8
 msgid "tag"
 msgstr ""
-
-#: data/com.github.juarezfranco.tarefas-desktop.desktop.in:11
-msgid "Tasks"
-msgstr "Tarefas"
 
 #: data/com.github.juarezfranco.tarefas-desktop.appdata.xml.in:10
 #, fuzzy

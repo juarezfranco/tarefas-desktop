@@ -31,6 +31,7 @@ msgstr ""
 
 #: src/Resources/Strings.vala:13
 #: data/com.github.juarezfranco.tarefas-desktop.desktop.in:3
+#: data/com.github.juarezfranco.tarefas-desktop.desktop.in:11
 #: data/com.github.juarezfranco.tarefas-desktop.appdata.xml.in:7
 msgid "Tasks"
 msgstr ""
@@ -86,10 +87,6 @@ msgstr ""
 
 #: data/com.github.juarezfranco.tarefas-desktop.desktop.in:8
 msgid "tag"
-msgstr ""
-
-#: data/com.github.juarezfranco.tarefas-desktop.desktop.in:11
-msgid "Tasks"
 msgstr ""
 
 #: data/com.github.juarezfranco.tarefas-desktop.appdata.xml.in:10
