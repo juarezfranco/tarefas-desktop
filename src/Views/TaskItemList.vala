@@ -24,13 +24,13 @@ public class App.Views.TaskItemList : Gtk.ListBoxRow {
 
         if (task.finished) {
             label += Strings.get("[COMPLETED]") + " ";
-            title_label.get_style_context().add_class("label-task-completed");
+            title_label.get_style_context().add_class ("label-task-completed");
         }
 
         label += task.title;
 
         title_label.label = label;
-        created_at_label.label = Strings.get("CREATED_AT") + " " + task.created_at.format("%x %H:%M");
+        created_at_label.label = Granite.DateTime.get_relative_datetime (task.created_at);
     }
 
     private void remove_task (App.Models.Task task) {

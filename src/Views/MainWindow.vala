@@ -12,7 +12,6 @@ public class App.Views.MainWindow : Gtk.ApplicationWindow {
     // Widgets
     private Gtk.MenuButton home_button;
     private Gtk.MenuButton add_task_button;
-    private Gtk.HeaderBar header;
     private Gtk.Paned main_container;
     private App.Views.TaskForm task_form;
     private App.Views.TaskView task_view;
@@ -50,6 +49,26 @@ public class App.Views.MainWindow : Gtk.ApplicationWindow {
         stack.set_visible_child(main_container);
     }
 
+    private void show_task (App.Models.Task task) {
+        if (task_view != null) {
+            task_view.destroy ();
+        }
+        task_view = new App.Views.TaskView (task);
+
+        // Listen action edit task
+        task_view.on_edit_clicked.connect ((view, task) => {
+            add_task_button.visible = false;
+            home_button.visible = true;
+            stack.set_transition_type (Gtk.StackTransitionType.SLIDE_LEFT);
+
+            task_form.prepare_to_edit (task);
+            stack.set_visible_child (task_form);
+        });
+
+        content.add (task_view);
+        content.show_all ();
+    }
+
     private void listen_widgets () {
         // Listen action show form to add task
         add_task_button.clicked.connect (() => {
@@ -73,34 +92,14 @@ public class App.Views.MainWindow : Gtk.ApplicationWindow {
         });
     }
 
-    private void show_task (App.Models.Task task) {
-        if (task_view != null) {
-            task_view.destroy ();
-        }
-        task_view = new App.Views.TaskView (task);
-
-        // Listen action edit task
-        task_view.on_edit_clicked.connect ((view, task) => {
-            add_task_button.visible = false;
-            home_button.visible = true;
-            stack.set_transition_type (Gtk.StackTransitionType.SLIDE_LEFT);
-
-            task_form.prepare_to_edit (task);
-            stack.set_visible_child (task_form);
-        });
-
-        content.add (task_view);
-        content.show_all ();
-    }
-
     private void create_widgets () {
-        // start: header
-        header = new Gtk.HeaderBar ();
+        // start: headerbar
         home_button = new Gtk.MenuButton ();
         home_button.set_can_focus (false);
         home_button.label = Strings.get("GO_TO_HOME");
         home_button.valign = Gtk.Align.CENTER;
         home_button.sensitive = true;
+        home_button.get_style_context ().add_class (Granite.STYLE_CLASS_BACK_BUTTON);
 
         add_task_button = new Gtk.MenuButton ();
         add_task_button.set_can_focus (false);
@@ -111,13 +110,25 @@ public class App.Views.MainWindow : Gtk.ApplicationWindow {
         add_task_button.valign = Gtk.Align.CENTER;
         add_task_button.sensitive = true;
 
-        header.show_close_button = true;
-        header.has_subtitle = false;
-        header.pack_start (home_button);
-        header.pack_end (add_task_button);
-        header.title = Strings.get("TASKS");
-        set_titlebar (header);
-        // end: header
+        var mode_switch = new Granite.ModeSwitch.from_icon_name (
+            "display-brightness-symbolic",
+            "weather-clear-night-symbolic"
+        );
+        mode_switch.primary_icon_tooltip_text = ("Light background");
+        mode_switch.secondary_icon_tooltip_text = ("Dark background");
+        mode_switch.valign = Gtk.Align.CENTER;
+        mode_switch.bind_property ("active", Gtk.Settings.get_default (), "gtk_application_prefer_dark_theme");
+
+        var headerbar = new Gtk.HeaderBar ();
+        headerbar.get_style_context ().add_class ("default-decoration");
+        headerbar.show_close_button = true;
+        headerbar.has_subtitle = false;
+        headerbar.pack_start (home_button);
+        headerbar.pack_end (mode_switch);
+        headerbar.pack_end (add_task_button);
+        headerbar.title = Strings.get("TASKS");
+        set_titlebar (headerbar);
+        // end: headerbar
 
         // start: content main
         tasks_list = new App.Views.TasksList ();
