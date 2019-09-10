@@ -52,6 +52,7 @@ public class App.Views.TaskItemList : Gtk.ListBoxRow {
         created_at_label = new Gtk.Label ("");
         created_at_label.xalign = 1;
         created_at_label.get_style_context().add_class("label-datetime");
+        created_at_label.margin_end = 10;
         content.pack_start (created_at_label);
 
         add(content);

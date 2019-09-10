@@ -20,7 +20,7 @@ executable(
 
     'src/Views/MainWindow.vala',
     'src/Views/TaskForm.vala',
-    'src/Views/TaskView.vala',
+    'src/Views/TaskShow.vala',
     'src/Views/TaskItemList.vala',
     'src/Views/TasksList.vala',
 

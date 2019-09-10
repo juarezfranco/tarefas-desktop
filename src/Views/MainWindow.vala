@@ -14,7 +14,7 @@ public class App.Views.MainWindow : Gtk.ApplicationWindow {
     private Gtk.MenuButton add_task_button;
     private Gtk.Paned main_container;
     private App.Views.TaskForm task_form;
-    private App.Views.TaskView task_view;
+    private App.Views.TaskShow task_show;
     private Gtk.Box content;
     private App.Views.TasksList tasks_list;
 
@@ -50,13 +50,13 @@ public class App.Views.MainWindow : Gtk.ApplicationWindow {
     }
 
     private void show_task (App.Models.Task task) {
-        if (task_view != null) {
-            task_view.destroy ();
+        if (task_show != null) {
+            task_show.destroy ();
         }
-        task_view = new App.Views.TaskView (task);
+        task_show = new App.Views.TaskShow (task);
 
         // Listen action edit task
-        task_view.on_edit_clicked.connect ((view, task) => {
+        task_show.on_edit_clicked.connect ((view, task) => {
             add_task_button.visible = false;
             home_button.visible = true;
             stack.set_transition_type (Gtk.StackTransitionType.SLIDE_LEFT);
@@ -65,7 +65,7 @@ public class App.Views.MainWindow : Gtk.ApplicationWindow {
             stack.set_visible_child (task_form);
         });
 
-        content.add (task_view);
+        content.add (task_show);
         content.show_all ();
     }
 
@@ -137,11 +137,9 @@ public class App.Views.MainWindow : Gtk.ApplicationWindow {
         scroll_list.add (tasks_list);
         scroll_list.vexpand = true;
         var sidebar = new Gtk.Box (Gtk.Orientation.VERTICAL, 10);
-        sidebar.get_style_context().add_class("bg-sidebar");
         sidebar.add (scroll_list);
 
         content = new Gtk.Box (Gtk.Orientation.VERTICAL, 10);
-        content.get_style_context().add_class("bg-white");
         content.expand = true;
 
         main_container = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);

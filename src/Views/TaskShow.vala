@@ -1,7 +1,7 @@
 
 using App.Resources;
 
-public class App.Views.TaskView : Gtk.Box {
+public class App.Views.TaskShow : Gtk.Box {
 
     private App.Models.Task task;
     private Granite.HeaderLabel header_label;
@@ -12,7 +12,7 @@ public class App.Views.TaskView : Gtk.Box {
 
     public signal void on_edit_clicked (App.Models.Task task);
 
-    public TaskView (App.Models.Task task) {
+    public TaskShow (App.Models.Task task) {
         create_widgets ();
 
         this.task = task;
@@ -60,7 +60,7 @@ public class App.Views.TaskView : Gtk.Box {
         var image = new Gtk.Image.from_icon_name ("tag", Gtk.IconSize.DND);
         image.vexpand = false;
         header_label = new Granite.HeaderLabel ("");
-        header_label.get_style_context ().add_class("label-task-view");
+        header_label.get_style_context ().add_class (Granite.STYLE_CLASS_H2_LABEL);
         header_label.set_line_wrap (true);
         header.add (image);
         header.add (header_label);
