@@ -45,7 +45,7 @@ public class App.Dao.TaskDao {
         var sql =
             "SELECT "+select_columns_default+" FROM tasks
             WHERE deleted_at is null
-            ORDER BY id DESC, created_at DESC
+            ORDER BY finished_at IS NULL DESC, id DESC, created_at DESC
             LIMIT $limit OFFSET $skip";
 
         Sqlite.Statement stmt;
