@@ -3,6 +3,7 @@
 Ideal for managing daily tasks
 
 ![Tasks](resources/picture.png)
+![Tasks](resources/picture2.png)
 
 ## Building and Installation
 
