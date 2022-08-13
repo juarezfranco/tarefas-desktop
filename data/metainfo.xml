@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.github.juarezfranco.tarefas-desktop</id>
+
+  <name>Tarefas Desktop</name>
+  <summary>Ideal for managing daily tasks</summary>
+
+  <metadata_license>CC-BY-4.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+
+  <description>
+    <p>
+      Ideal for managing daily tasks
+    </p>
+  </description>
+
+  <launchable type="desktop-id">com.github.juarezfranco.tarefas-desktop.desktop</launchable>
+</component>
